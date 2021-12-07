@@ -1,0 +1,140 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - bot_challenge
+  - university
+  - fee_structure
+  - UG_courses
+  - college_address
+  - about_college
+  - Vision_mision_of_college
+  - College_Facilities
+  - College_Accreditions
+  - College_Admission_Criteria
+  - College_Departement_info
+  - College_About_project-based-learning
+  - out_of_scope 
+  - my_name:
+      use_entities:
+        - name     
+ 
+actions:
+  - utter_greet
+  - utter_thanks
+  - utter_about_college
+  - utter_did_that_help
+  - utter_happy 
+  - action_submit
+  - action_page
+
+forms:
+  user_details_form:
+    name:
+      - type: from_entity
+        entity: name
+
+
+slots:
+  name: 
+    # type: text
+    type: rasa.shared.core.slots.UnfeaturizedSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  
+       
+entities:
+  - name
+ 
+
+
+
+
+responses:
+  utter_greet : 
+    - text: "Hey! Welcome to APSIT. Hope you are doing well!!"
+
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy_plus_ask:
+    - text: "Awesome. So, how may I help you."
+
+  utter_happy:
+    - text: "Great, carry on! I'm here to help you with any other queries."
+  
+  utter_deny:
+    - text: "Sorry,  Please try again."
+
+  utter_goodbye:
+    - text: "Goodbye. Feel free to ask for any further queries anytime."
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+  utter_university:
+    - text: "A.P. Shah Institute of Technology is affiliated to Mumbai University."
+
+  utter_fee_structure:
+    - text: "Following is the Fee Structure for Academic Year 2021-22:
+           https://www.apsit.edu.in/fee-structure-2020-21 "
+
+  utter_UG_courses:
+    - text: "We proudly offer :1. Civil Engineering  2.Computer Engineering  3.Information Technology  4.Mechanical Engineering  5.Computer Science and Engineering (AI and ML)  6.Computer Science and Engineering (Data Science). For further info do check the following link: https://www.apsit.edu.in/ug-courses "
+
+  utter_college_address:
+    - text: " Address: Survey No. 12, 13 Opp. Hypercity Mall, Kasarvadavali,Ghodbunder Road, Thane West,Thane, Maharashtra 400615"
+
+  utter_about_college:
+    - text: "A. P. Shah Institute of Technology (APSIT) has started functioning with commitment of imparting state of art technical education so as to inculcate conceptual know-how, analyzing skills, decision making abilities and leadership qualities in the students. APSIT stands committed to the intellectual and moral growth of every student.
+
+   APSIT has experienced and proficient team which aspires to unlock the hidden potential in subconscious minds of students and to create competent Engineers with vision & social commitment."
+
+  utter_Vision_mision_of_college:
+    - text: "Vision:
+ 
+APSIT aspires to be a premier institute producing globally competent engineering professionals to contribute towards socio-economic growth of India.       Mission:
+ 
+To provide conducive and collaborative environment to meet contemporary & future Engineering challenges by project based and value-added education with the support of trained faculty. "
+
+  utter_College_Facilities:
+    - text: "https://www.apsit.edu.in/facilities "
+
+  # utter_College_Accreditions:
+  #   - text: "https://www.apsit.edu.in/permissions "
+
+  utter_College_Admission_Criteria:
+    - text: "https://www.apsit.edu.in/admission-criteria "
+
+
+  utter_College_Departement_info:
+    - text: "https://www.apsit.edu.in/departments "
+   
+  utter_College_About_project-based-learning: 
+    - text: " Nowadays Industry expects engineers to have skills like critical thinking, problem solving, ability to work in team, make presentation of he ideas and technology developed etc. Project Based Learning is a novel teachinPBLg method, designed to address these requirements to make your ward ready for Industry. It helps students to learn better and it motivates students to gain knowledge, and remember it longer. Moreover it gives students the chance to apply the skills they learn in Engineering to technology to real-world situations. The skills acquired will help your ward to succeed in professional life. For more info: https://www.apsit.edu.in/project-based-learning-pbl "
+ 
+ 
+  utter_ask_name:
+    - text: " What is your name??"
+
+
+  utter_thanks:
+    - text : " Hey {Name}. How may I help you.. "  
+
+
+  utter_out_of_scope:
+    - text: "Sorry, please rephrase your query."
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+

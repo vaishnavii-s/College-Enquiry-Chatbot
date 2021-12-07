@@ -1,0 +1,212 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - thanks
+    - thank you
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - fine
+    - awesome
+    - nice
+    - I'm good
+    - happy
+    - good
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: university
+  examples: |
+    -which university?
+    -which university is the college affiliated to?
+    -what is the name of the university?
+    -university?
+    -which university does the college belong to?
+  
+- intent: fee_structure
+  examples: |
+    -what is the fee structure?
+    -tell me about the fee structure.
+    -fee structure
+    -I want the details about the fee structure.
+  
+- intent: UG_courses
+  examples: |
+    -what are the UG courses available?
+    -what the different branches available?
+    -UG course list
+    -what are the various UG courses in your college
+  
+- intent: college_address
+  examples: |
+    -where is the college situated?
+    -where is the college?
+    -address of the college?
+    -can you tell me about the location of college?
+
+- intent: about_college
+  examples: |
+    -about the college
+    -tell me about the college
+    -tell me about APSIT
+    -I need details about the college
+    -can you tell me about the college?
+
+- intent: Vision_mision_of_college
+  examples: |
+    -what is the vision of the college?
+    -what is the mission of the college?
+    -what are the vision and mission of the college?
+    -tell me about the vision and mission of the college.
+    -vision and mission.
+    -mission and vision.
+
+- intent: College_Facilities
+  examples: |
+    -tell me about the facilties provided by the college
+    -what are the facilities provided by the college?
+    -facilities of the college
+    -facilities
+    -what facilities are there in the college?
+    -what facilities does your college offer?
+
+- intent: College_Accreditions
+  examples: |
+    -accreditions
+    -accreditions of the college
+    -what is the college accredited to?
+    -tell me about the accredtions
+
+- intent: College_Admission_Criteria
+  examples: |
+    -what is the admission criteria?
+    -admission criteria
+    -tell me about the admission criteria
+    -I need the details of the admission criteria.
+
+- intent: College_Departement_info
+  examples: |
+    -I want know about the department
+    -give me the department info
+    -department info
+    -tell me about the departments
+    -information about the departments
+
+- intent: College_About_project-based-learning
+  examples: |
+    -what is project based learning
+    -project based learning
+    -tell me about project based learning
+    -details about project based learning
+    -can you tell me about PBL
+    -PBL
+    -about PBL
+
+- intent: my_name
+  examples: |
+    -my name is [vaishnavi]{"entity":"name","value":"vaishnavi"}
+    -my name is [parvi]{"entity":"name","value":"parvi"}
+    -my name is [manish]{"entity":"name","value":"manish"}
+    -[manish]{"entity":"name","value":"manish"} is my name
+    -[parvi]{"entity":"name","value":"parvi"} is my name
+    -[vaishnavi]{"entity":"name","value":"vaishnavi"} is my name
+    -my name is [aditi]{"entity":"name","value":"aditi"}
+    -[aditi]{"entity":"name","value":"aditi"} is my name
+    -my name is [rahul]{"entity":"name","value":"rahul"}
+    -[rahul]{"entity":"name","value":"rahul"} is my name
+
+
+- intent: out_of_scope
+  examples: |
+    -I want to order food
+    -What is 2 + 2?
+    -Who's the US President?
+    -how to contact hod?
+    -how to meet principal
+    -can you call 
+    -what is the canteen food like
+
+# - intent: tell_user_name
+#   examples: |
+#     -I want to tell my user name
+#     -my user name
+#     -my user name
+#     -user name
+#     -ask me my user name
+#     -user name of me
+
+
+
+
+
+
+
+

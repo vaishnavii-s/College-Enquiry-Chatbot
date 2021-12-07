@@ -1,0 +1,115 @@
+version: "2.0"
+
+stories:
+
+
+- story: greet1
+  steps:
+  - intent: about_college
+  - action: utter_about_college
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+
+- story: greet2
+  steps: 
+  - intent: Vision_mision_of_college
+  - action: utter_Vision_mision_of_college
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+
+- story: greet3
+  steps: 
+  - intent: College_Facilities
+  - action: utter_College_Facilities
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+
+
+- story: greet4
+  steps: 
+  - intent: College_Accreditions
+  - action: action_page
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+
+- story: greet5
+  steps: 
+  - intent: UG_courses
+  - action: utter_UG_courses
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+
+- story: greet6
+  steps: 
+  - intent: College_Admission_Criteria
+  - action: utter_College_Admission_Criteria
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+
+
+- story: greet7
+  steps: 
+  - intent: fee_structure
+  - action: utter_fee_structure
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+ 
+
+- story: greet8
+  steps: 
+  - intent: College_Departement_info
+  - action: utter_College_Departement_info
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+
+- story: greet9
+  steps: 
+  - intent: College_About_project-based-learning
+  - action: utter_College_About_project-based-learning
+  - intent: affirm
+  - action: utter_did_that_help
+  - action: utter_happy
+
+
+- story: greet10
+  steps:
+  - intent: university
+  - action: utter_university
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+  
+- story: greet11
+  steps:
+  - intent: college_address
+  - action: utter_college_address
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+ 
+  
+- story: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: deny_
+  steps:
+  - intent: deny
+  - action: utter_deny
